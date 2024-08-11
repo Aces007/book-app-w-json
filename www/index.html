@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BookApp w/ JSON</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="header_cont">
+        <div class="header_content">
+            <img src="assets/books.png">
+            <h1>ChapterHub</h1>
+        </div>
+    </div>
+    <div class="app">
+        <div class="app_left">
+            <h1 style="text-align: center;">Add Book to Your Collection</h1>
+            <div id="book-form">
+                <input type="text" id="book-id" placeholder="Book ID">
+                <input type="text" id="book-title" placeholder="Book Title">
+                <input type="text" id="author" placeholder="Author">
+                <input type="text" id="publisher" placeholder="Publisher">
+                <input type="text" id="isbn" placeholder="ISBN">
+                <input type="number" id="publication-year" placeholder="Publication Year">
+                <input type="text" id="description" placeholder="Description">
+                <input type="number" id="price" placeholder="Price">
+                <input type="text" id="cover-image" placeholder="Cover Image URL">
+                <button onclick="addBook()">Add Book</button>
+                <button onclick="saveBooksToJSON()" class="saveJSON">Save JSON</button>
+            </div>
+        </div>
+        <div class="app_right">
+            <ul id="book-list"></ul>
+        </div>
+    </div>
+
+</body>
+</html>

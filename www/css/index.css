@@ -1,0 +1,223 @@
+/*#region Variables */
+:root {
+    /*Font Suggestions 
+        V1.0:
+        Intro - 40/Libre Baskerville
+        Header - 18/Maison Neue Medium
+        Primary - 15/Poppins
+        HeadQuote - 95/Maison Neue Black
+        SectionTag - 70/Maison Neue Demibold
+        Timeline - 40/Poppins
+    */
+
+    --ff-univers: 'Univers', sans-serif;
+    --ff-libre-bask: "Libre Baskerville", serif;
+    --ff-maison_med: 'MaisonNeue Medium', sans-serif;
+    --ff-poppins: "Poppins", sans-serif;
+    --ff-maison_black: 'MaisonNeue Black', sans-serif;
+    --ff-maison_demi: 'MaisonNeue Demibold', sans-serif;
+    --ff-IBM: "IBM Plex Sans", sans-serif;
+    --ff-newsreader: "Newsreader", serif;
+
+
+    /*Main Background*/
+    --clr-main-bg-01: #ffffff;
+
+    /* Gradient */
+    --clr-gr-1: #dbdae1;
+    --clr-gr-2: #a3aaba;
+
+    --clr-percent-bg: #555;
+
+
+    /*#region Design Colors*/
+        --clr-highlight: #007bff;  
+        --clr-highlight-2: #0056b3;  
+        --clr-highlight-3: #6f42c1; 
+        --clr-highlight-4: #00c49a;
+        --clr-highlight-5: #004080; 
+
+    /*#endregion Design Colors*/
+    
+    /*#region Font Color Palette */
+    --clr-primary: #fff;
+    --clr-secondary: #F0F0F0;
+    --clr-accent: #333333;
+    --clr-text: #000000;
+    /*#endregion Font Color Palette */
+
+
+/*#endregion Variables */
+}
+
+
+.header_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    background-color: var(--clr-primary);
+}
+
+.header_cont .header_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.header_cont .header_content img {
+    height: 90px;
+    width: 90px;
+}
+
+.header_cont .header_content h1 {
+    font-family: var(--ff-maison_black);
+    font-size: 35px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    width: 94%;
+}
+
+.app_left {
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.app_left:hover{
+    border-radius: 10px;
+    background-color: #e9ecf5;
+}
+
+.app_right {
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.app_right:hover{
+    border-radius: 10px;
+    background-color: #e9ecf5;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(32, 154, 32);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(38, 187, 38);;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cover-image {
+    max-width: 200px;
+    margin-right: 10px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 30rem;
+} 
+
+.saveJSON {
+    background-color: #152c80;
+} .saveJSON:hover {
+    background-color: #183cbd;
+}
+
+
+.loadJSON {
+    background-color: #663399;
+} .loadJSON:hover {
+    background-color: #793ab9;
+}
+
+
+@media screen and (min-width:400px) {
+    .app {
+        background-position: top center;
+        padding: 50px 20px;  /* Adjust padding for portrait orientation */
+        margin: 0px auto;    /* Center the content vertically and horizontally */
+        max-width: 100%;     /* Ensure the app scales well on narrow screens */
+        height: auto;        /* Allow the height to adjust according to content */
+    }
+    
+}
+
+@media screen and (min-width: 400px) and (orientation: landscape) {
+    .app {
+        background-position: center center; /* Center the background horizontally and vertically */
+        padding: 40px 30px; /* Adjust padding for landscape orientation */
+        margin: 0px auto;   /* Center the content horizontally */
+        max-width: 100%;     /* Slightly limit the width to avoid stretching on wide screens */
+        height: auto;       /* Allow the height to adjust according to content */
+        display: flex;      /* Flexbox layout to handle alignment */
+        flex-direction: row; /* Arrange children side by side if needed */
+        justify-content: center; /* Center children horizontally */
+        align-items: center;  /* Center children vertically */
+    }
+
+    /* Additional styles for content within the app */
+    .app > * {
+        margin: 0 10px; 
+
+    }
+}
+
