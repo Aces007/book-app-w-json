@@ -1,0 +1,46 @@
+[
+  {
+    "id": "Harry Potter",
+    "title": "Harry Potter and the Deathly Hallows",
+    "author": "JK Rowling",
+    "publisher": "JK Rowling",
+    "isbn": "9781234567897",
+    "year": "2007",
+    "description": "",
+    "price": "3500",
+    "coverImage": "https://i5.walmartimages.com/seo/Harry-Potter-and-the-Deathly-Hallows-Book-7-Hardcover-9780545010221_274a96be-6447-48dd-af5b-d788057b0d90.2ba44b00d2ddd81477bf5252a689dbbe.jpeg"
+  },
+  {
+    "id": "The Godfather",
+    "title": "The Godfather",
+    "author": "Mario Puzo",
+    "publisher": "Mario Puzo",
+    "isbn": "9781234567897",
+    "year": "1969",
+    "description": "",
+    "price": "5000",
+    "coverImage": "https://cdn.kobo.com/book-images/d1d913e8-e02f-4e26-9a4b-c5022f41db27/353/569/90/False/the-godfather.jpg"
+  },
+  {
+    "id": "The Perks of Being a Wallflower",
+    "title": "The Perks of Being a Wallflower",
+    "author": "Stephen Chbosky",
+    "publisher": "Stephen Chbosky",
+    "isbn": "9781234567897",
+    "year": "1999",
+    "description": "",
+    "price": "2000",
+    "coverImage": "https://cdn.fable.co/covers/9781439122433.jpg"
+  },
+  {
+    "id": "Atomic Habits",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "publisher": "James Clear",
+    "isbn": "9781234567897",
+    "year": "2018",
+    "description": "",
+    "price": "4000",
+    "coverImage": "https://cdn.kobo.com/book-images/24463cb4-28ad-48cb-807f-158cf6d11a92/1200/1200/False/atomic-habits-tiny-changes-remarkable-results.jpg"
+  }
+]

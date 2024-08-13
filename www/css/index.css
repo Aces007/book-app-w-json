@@ -182,12 +182,35 @@ div {
     background-color: #183cbd;
 }
 
-
 .loadJSON {
     background-color: #663399;
 } .loadJSON:hover {
     background-color: #793ab9;
 }
+
+.navBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24rem;
+    position: relative;
+    width: max-content;
+}
+
+#prevBtn {
+    background-color: #3498db;
+    color: #ecf0f1;
+    border-radius: 100px;
+    padding: 1rem;
+}
+
+#nextBtn {
+    background-color: #2ecc71;
+    color: #ecf0f1;
+    border-radius: 100px;
+    padding: 1rem;
+}
+
 
 
 @media screen and (min-width:400px) {

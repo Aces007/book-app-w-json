@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>BookApp w/ JSON</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="cordova.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -27,13 +28,13 @@
                 <input type="number" id="price" placeholder="Price">
                 <input type="text" id="cover-image" placeholder="Cover Image URL">
                 <button onclick="addBook()">Add Book</button>
-                <button onclick="saveBooksToJSON()" class="saveJSON">Save JSON</button>
+                <div id="saveBtn"><button onclick="saveBooksToJSON()" class="saveJSON">Save JSON</button></div>
+                <div id="loadBtn"><button onclick="loadBooksFromJSON()" class="loadJSON">Load JSON</button></div>
             </div>
         </div>
         <div class="app_right">
             <ul id="book-list"></ul>
         </div>
     </div>
-
 </body>
 </html>
